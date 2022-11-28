@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maki Boop</title>
+
+<style>
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.container #btn {
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <img src="/BOOP ME.png" alt="Boop-me" id="maki-photo">
+        <button id="btn" onclick="audio.play();"></button>
+        <script type="text/javascript">
+            const audio = new Audio();
+            audio.src = "./squeak2.mp3";
+        </script>
+    </div>
+</body>
+</html>
